@@ -8,9 +8,9 @@ function App() {
  </div>; 
 }
 
-function App() {
+function App1() {
 	return	<ul>
-    <li>1</li>
+    <li>text1</li>
     <li>1</li>
     <li>1</li>
     <li>1</li>
@@ -23,4 +23,12 @@ function App() {
 		</ul>;
 }
 
-export default App;
+function App2() {
+	return <ul>
+			<li>text1</li>
+			<li>text2</li>
+			<li>text3</li>
+		</ul>;
+}
+
+export default App2;
