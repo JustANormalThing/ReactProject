@@ -79,7 +79,7 @@ function App7() {
 	<p>	age:  {age} </p>
 	</div>;
 }
-*/
+
 
 function App() {
 	const arr = [1, 2, 3, 4, 5];
@@ -91,6 +91,15 @@ function App() {
     <li> {arr[4]}</li>
   </ul>
 }
+*/
+function App() {
+	const obj = {name: 'john', surname: 'smit'};
+  return <div>
+  <p>{obj.name}</p>
+  <p>{obj.surname}</p>
+  </div>
+}
 
 
 export default App;
+
