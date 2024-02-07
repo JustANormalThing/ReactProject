@@ -52,4 +52,7 @@ function App3() {
  );
 }
 
-export default App3;
+function App4() {
+	return <input/>;
+}
+export default App4;
