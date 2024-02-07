@@ -91,7 +91,7 @@ function App() {
     <li> {arr[4]}</li>
   </ul>
 }
-*/
+
 function App() {
 	const obj = {name: 'john', surname: 'smit'};
   return <div>
@@ -99,7 +99,14 @@ function App() {
   <p>{obj.surname}</p>
   </div>
 }
-
+*/
+function App() {
+	const attr = 'block';
+	
+	return <div id ={attr}>
+		text
+	</div>;
+}
 
 export default App;
 
