@@ -1,14 +1,14 @@
 import React from 'react';
 
-function App() {
-  return <div>
-  Writing here many words
-  <p className='One'> Somting here </p>
-  <p className='Two'> Somting here </p>
- </div>; 
-}
+//function App() {
+ // return <div>
+ // Writing here many words
+ // <p className='One'> Somting here </p>
+ // <p className='Two'> Somting here </p>
+// </div>; 
+//}
 
-function App1() {
+/*function App1() {
 	return	<ul>
   <li>text1</li>
   <li>1</li>
@@ -79,7 +79,18 @@ function App7() {
 	<p>	age:  {age} </p>
 	</div>;
 }
+*/
+
+function App() {
+	const arr = [1, 2, 3, 4, 5];
+  return <ul>
+    <li> {arr[0]}</li>
+    <li> {arr[1]}</li>
+    <li> {arr[2]}</li>
+    <li> {arr[3]}</li>
+    <li> {arr[4]}</li>
+  </ul>
+}
 
 
-
-export default App7;
+export default App;
