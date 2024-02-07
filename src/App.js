@@ -56,8 +56,20 @@ function App3() {
 	//return <input/>;
 //}
 
-function App5() {
-	return <> <input /> <input /> <input /> </>;
+//function App5() {
+	//return <> <input /> <input /> <input /> </>;
+//}
+
+function App6() {
+	const str1 = 'text1';
+	const str2 = 'text1';
+	
+	return <div>
+		<p>{str1}</p>
+		<p>{str2}</p>
+	</div>;
 }
 
-export default App5;
+
+
+export default App6;
