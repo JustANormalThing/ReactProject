@@ -8,28 +8,28 @@ function App() {
  </div>; 
 }
 
-//function App1() {
-	//return	<ul>
-   // <li>text1</li>
-   // <li>1</li>
-   // <li>1</li>
-   // <li>1</li>
-   // <li>1</li>
-   // <li>1</li>
-   // <li>1</li>
-   // <li>1</li>
-   // <li>1</li>
-   // <li>1</li>
-	//	</ul>;
-//}
+function App1() {
+	return	<ul>
+  <li>text1</li>
+  <li>1</li>
+  <li>1</li>
+  <li>1</li>
+  <li>1</li>
+  <li>1</li>
+  <li>1</li>
+  <li>1</li>
+  <li>1</li>
+  <li>1</li>
+	</ul>;
+}
 
-//function App2() {
-	//return <ul>
-		//	<li>text1</li>
-		//	<li>text2</li>
-		//	<li>text3</li>
-		//</ul>;
-//}
+function App2() {
+	return <ul>
+			<li>text1</li>
+			<li>text2</li>
+			<li>text3</li>
+		</ul>;
+}
 
 function App3() {
 	return  (
@@ -52,13 +52,13 @@ function App3() {
  );
 }
 
-//function App4() {
-	//return <input/>;
-//}
+function App4() {
+	return <input/>;
+}
 
-//function App5() {
-	//return <> <input /> <input /> <input /> </>;
-//}
+function App5() {
+	return <> <input /> <input /> <input /> </>;
+}
 
 function App6() {
 	const str1 = 'text1';
@@ -70,6 +70,16 @@ function App6() {
 	</div>;
 }
 
+function App7() {
+	const name = 'user';
+	const age  = '30';
+	
+	return <div>
+		name: {name}
+	<p>	age:  {age} </p>
+	</div>;
+}
 
 
-export default App6;
+
+export default App7;
