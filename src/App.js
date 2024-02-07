@@ -52,7 +52,12 @@ function App3() {
  );
 }
 
-function App4() {
-	return <input/>;
+//function App4() {
+	//return <input/>;
+//}
+
+function App5() {
+	return <> <input /> <input /> <input /> </>;
 }
-export default App4;
+
+export default App5;
