@@ -127,7 +127,6 @@ function App() {
 		{items}
 	</ul>
 }
-*/
 
 function App() {
 	return <div>
@@ -141,5 +140,68 @@ function App() {
 	<br />
 	</div>;
 }
+
+function App() {
+	return <div>
+		<ul>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+		</ul>
+		<ul>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+		</ul>
+	</div>;
+}
+*/
+
+function App() {
+	return <div>
+		<table>
+			<tbody>
+			<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			</tr>
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+			<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			</tr>
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+			<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>;
+}
+
 export default App;
 
