@@ -231,5 +231,20 @@ function App() {
 	</div>;
 }
 */
+
+function App() {
+	let text = '';
+	const isAdult = true;
+	if (isAdult){
+		text = <p>yes</p>
+	} else	{
+		text = <p>no</p>
+	}
+	
+	return <div>
+		{text}
+	</div>
+	
+}
 export default App;
 
