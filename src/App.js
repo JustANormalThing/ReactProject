@@ -118,7 +118,7 @@ function App() {
   {li3}
 </main>
 }
-*/
+
 
 function App() {
 	const items = <><li>text1</li><li>text2</li><li>text3</li> </>;
@@ -127,6 +127,19 @@ function App() {
 		{items}
 	</ul>
 }
+*/
 
+function App() {
+	return <div>
+	<input />
+	<br />
+	<input />
+	<br />
+	<input />
+	<br />
+	<input />
+	<br />
+	</div>;
+}
 export default App;
 
