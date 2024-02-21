@@ -271,7 +271,7 @@ function App() {
 	
 	return text1
 }
-*/
+
 function App() {
 	const age = 17;
 	
@@ -279,5 +279,41 @@ function App() {
 	{age < 18 ? <p>text1</p> : <p>text2</p> }	
 	</div>;
 }
-export default App;
+
+function App() {
+	const isAuth = true;
+	
+	return <div>
+		{isAuth ? <p>вы авторизованы</p> :<p></p> }
+	</div>;
+}
+
+function App() {
+	const isAuth = false;
+	
+	return <div>
+		{isAuth  ? <p>Авторизованы</p> :<p>пожалуйста, авторизуйтесь</p>}
+	</div>;
+}
+*/
+
+function getDigitsSum(){
+	function num1(num){
+		return 100;
+	}
+	function num2(num){
+		return 22;
+	}
+	function num3(num){
+		return 1;
+	}
+
+	const num4 = num1(1) + num2(2) + num3(3);
+
+	return <div>
+		{num4}
+	</div>
+}
+export default getDigitsSum;
+
 
