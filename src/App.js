@@ -230,10 +230,19 @@ function App() {
 		result: {Math.sqrt(num)}
 	</div>;
 }
-*/
+
 
 function App() {
 	let text = '';
+	let text2 = '';
+
+	let text1 = prompt('Text: ');
+	if (text1){
+		text2 = <p> yes </p>
+	} else{
+		text2 = <p> no </p>
+	}
+
 	const isAdult = true;
 	if (isAdult){
 		text = <p>yes</p>
@@ -243,8 +252,32 @@ function App() {
 	
 	return <div>
 		{text}
+		<p> 
+			{text1}
+			{text2}
+		</p>
 	</div>
 	
+}
+
+
+function App() {
+	let text1;
+	const isAdmin = true;
+	if (isAdmin){
+	 text1 = <div><p>Text1</p>	<p>Text2</p></div>
+	}else {
+	}
+	
+	return text1
+}
+*/
+function App() {
+	const age = 17;
+	
+	return <div>
+	{age < 18 ? <p>text1</p> : <p>text2</p> }	
+	</div>;
 }
 export default App;
 
