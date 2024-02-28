@@ -295,25 +295,160 @@ function App() {
 		{isAuth  ? <p>Авторизованы</p> :<p>пожалуйста, авторизуйтесь</p>}
 	</div>;
 }
-*/
+
 
 function getDigitsSum(){
 	function num1(num){
-		return 100;
+		return 10000;
 	}
 	function num2(num){
-		return 22;
+		return 2000;
 	}
 	function num3(num){
-		return 1;
+		return 300;
+	}
+	function num4(num){
+		return 40;
 	}
 
-	const num4 = num1(1) + num2(2) + num3(3);
+	function num5(num){
+		return 5;
+	}
 
 	return <div>
-		{num4}
+		<p>{num1(1) + num2(2) + num3(3) + num4(4) + num5(5)}</p>
 	</div>
 }
 export default getDigitsSum;
 
+
+function App() {
+	function show1() {
+		alert(1);
+	}
+	
+	function show2() {
+		alert(2);
+	}
+	
+	return <div>
+		<button onClick={show1}>act1</button>
+		<button onClick={show2}>act2</button>
+	</div>;
+}
+
+
+function App() {
+	function button1(){
+		alert(1);
+	}
+	function button2(){
+		alert(2);
+	}
+	function button3(){
+		alert(3);
+	}
+	return <div>
+		<button onClick={button1}>act1</button>
+		<button onClick={button2}>act2</button>
+		<button onClick={button3}>act3</button>
+	</div>;
+}
+
+function App() {
+	function func(event) {
+		console.log(event.target); // объект с событием
+	}
+	
+	return <div>
+		<button onClick={func}>act</button>
+	</div>;
+}
+
+function App() {
+	function func(event, arg, arg1) {
+		console.log(event, arg,arg1);
+	}
+	
+	return <div>
+		<button onClick={event => func('eee', event,'Button')}>act</button>
+	</div>;
+}
+
+
+function App() {
+	function func( arg, event, arg1) {
+		console.log( arg, event ,arg1);
+	}
+	
+	return <div>
+		<button onClick={event => func('eee', event,'Button')}>act</button>
+	</div>;
+}
+
+
+function App() {
+	const arr = [
+		<li>1</li>,
+		<li>2</li>,
+		<li>3</li>,
+		<li>4</li>,
+		<li>5</li>,
+	];
+	
+	return <ul>
+		{arr}
+	</ul>
+}
+
+
+
+function App() {
+	const arr = [];
+	
+	for (let i = 1; i <= 5; i++) {
+		arr.push(<li>{i}</li>);
+	}
+	
+	return <ul>
+		{arr}
+	</ul>;
+}
+
+
+function App() {
+	const arr = ['a','b','c','d','e'];
+	
+	const res = arr.map(function(item,index) {
+		return <li key = {index}>{item}</li>;
+	});
+	
+	return <ul>
+		{res}
+	</ul>;
+}
+
+*/
+const users = [
+	{name: 'user1', surn: 'surn1', age: 30},
+	{name: 'user2', surn: 'surn2', age: 31},
+	{name: 'user3', surn: 'surn3', age: 32},
+];
+
+
+function App() {
+	
+	const res = users.map(function(item,index){
+		return <li key = {index}>
+			<span>{item.name}</span>:
+			<span> {item.surn} </span>
+			<span> {item.age} </span>
+		</li>
+	});
+	
+	return <ul>
+		{res}
+	</ul>
+}
+export default App;
 
