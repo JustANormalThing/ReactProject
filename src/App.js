@@ -428,18 +428,18 @@ function App() {
 	</ul>;
 }
 
-*/
+
 const users = [
-	{name: 'user1', surn: 'surn1', age: 30},
-	{name: 'user2', surn: 'surn2', age: 31},
-	{name: 'user3', surn: 'surn3', age: 32},
+	{id: 1 ,name: 'user1', surn: 'surn1', age: 30},
+	{id: 2,name: 'user2', surn: 'surn2', age: 31},
+	{id: 3,name: 'user3', surn: 'surn3', age: 32},
 ];
 
 
 function App() {
 	
-	const res = users.map(function(item,index){
-		return <li key = {index}>
+	const res = users.map(function(item){
+		return <li key = {item.id}>
 			<span>{item.name}</span>:
 			<span> {item.surn} </span>
 			<span> {item.age} </span>
@@ -450,5 +450,45 @@ function App() {
 		{res}
 	</ul>
 }
+
+
+*/
+
+const users = [
+	{id: 1 ,name: 'user1', surn: 'surn1', age: 30},
+	{id: 2,name: 'user2', surn: 'surn2', age: 31},
+	{id: 3,name: 'user3', surn: 'surn3', age: 32},
+];
+
+
+function App() {
+	
+	const name1 = users.map(function(item){
+		return <li key = {item.id}>
+			<span>{item.name}</span>:
+		</li>
+	});
+	const surn1 = users.map(function(item){
+		return <li key = {item.id}>
+			<span>{item.surn}</span>:
+		</li>
+	});
+	const age1 = users.map(function(item){
+		return <li key = {item.id}>
+			<span>{item.age}</span>:
+		</li>
+	});
+	return <table>
+	    <thead>
+			<tr>
+				<td>имя пользователя <tbody>{name1}</tbody></td>
+				<td>фамилия<tbody>{surn1}</tbody></td>
+				<td>возраст<tbody>{age1}</tbody></td>
+			</tr>
+		</thead>
+	</table>
+}
 export default App;
+
+
 
