@@ -1,4 +1,6 @@
 import React from 'react';
+import { nanoid } from 'nanoid'
+import uuid from 'react-uuid';
 
 //function App() {
  // return <div>
@@ -455,14 +457,19 @@ function App() {
 */
 
 const users = [
-	{id: 1 ,name: 'user1', surn: 'surn1', age: 30},
-	{id: 2,name: 'user2', surn: 'surn2', age: 31},
-	{id: 3,name: 'user3', surn: 'surn3', age: 32},
+	{id: nanoid() ,name: 'user1', surn: 'surn1', age: 30},
+	{id: nanoid(),name: 'user2', surn: 'surn2', age: 31},
+	{id: nanoid(),name: 'user3', surn: 'surn3', age: 32},
 ];
 
 
 function App() {
 	
+	const test = users.map(function(item){
+		return <li key = {item.id}>
+			<span>{item.id}</span>:
+		</li>
+	});		
 	const name1 = users.map(function(item){
 		return <li key = {item.id}>
 			<span>{item.name}</span>:
@@ -484,10 +491,15 @@ function App() {
 				<td>имя пользователя <tbody>{name1}</tbody></td>
 				<td>фамилия<tbody>{surn1}</tbody></td>
 				<td>возраст<tbody>{age1}</tbody></td>
+				<td>возраст<tbody>{test}</tbody></td>
 			</tr>
 		</thead>
+		<tbody>
+		
+		</tbody>
 	</table>
 }
+
 export default App;
 
 
