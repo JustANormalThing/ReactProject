@@ -43,7 +43,7 @@ function App() {
 		</tbody>
 	</table>
 }
-*/
+
 function App() {
 	const [name, setName] = useState('user1');
 	const [surn, setSurn] = useState('surn1');
@@ -75,7 +75,46 @@ function App() {
 	</p>;
 
 }
+
+
+function App() {
+	const [value, setValue] = useState('');
+	const [value1, setValue1] = useState('');
+	
+	return <div>
+		<input value={value} onChange={event => setValue(event.target.value)} />
+		<p>text: {value}</p>
+		<input value={value1} onChange={event => setValue1(event.target.value)} />
+		<p>text: {value1}</p>
+	</div>;
+}
+*/
+function square(num) {
+	return 2024 - num;
+}
+
+function square1(num1){
+	return (num1 - 32) * 5/9
+}
+
+function App() {
+	const [value, setValue] = useState(0);
+	const [value1, setValue1] = useState(0);
+	
+	function handleChange(event) {
+		setValue(event.target.value);
+	}
+
+	function handleChange1(event) {
+		setValue1(event.target.value);
+	}
+	
+	return <div>
+		<input value={value} onChange={handleChange} />
+		<p>Result: {square(value)}</p>
+		<input value={value1} onChange={handleChange1} />
+		<p>Result: {square1(value1)}</p>
+	</div>;
+}
 export default App;
-
-
 
